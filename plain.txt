@@ -1,0 +1,2 @@
+context['ti'].xcom_push(key='my_data', value=my_data)
+my_data = context['ti'].xcom_pull(key='my_data', task_ids='push_data')
